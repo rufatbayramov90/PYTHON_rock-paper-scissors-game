@@ -25,10 +25,15 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+images = [rock, paper, scissors]
 
 user = int(input("What do you choose? 0 for Rock, 1 for Paper 1 2 for Scissors -- "))
+print("User chose")
+print(images[user])
+
 computer = random.randint(0, 2)
-print(f"Computer choose {computer}")
+print("Computer chose")
+print(images[computer])
 
 if user >= 3 or user < 0:
     print("Invalit Number")
