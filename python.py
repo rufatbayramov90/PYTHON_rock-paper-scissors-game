@@ -26,5 +26,19 @@ scissors = '''
 ---.__(___)
 '''
 
-user = input("What do you choose? 0 for Rock, 1 for Paper 1 2 for Scissors")
+user = int(input("What do you choose? 0 for Rock, 1 for Paper 1 2 for Scissors -- "))
 computer = random.randint(0, 2)
+print(f"Computer choose {computer}")
+
+if user == 0 and computer == 2:
+    print("User win!")
+elif computer == 0 and user == 2:
+    print("User lose")
+elif computer > user:
+    print("User lose")
+elif computer < user:
+    print("User win")
+elif user == computer:
+    print("It is a draw")
+else:
+    print("Invalit Number")
