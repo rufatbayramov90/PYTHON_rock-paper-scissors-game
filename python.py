@@ -1,3 +1,4 @@
+import random
 rock = '''
     _______
 ---'   ____)
@@ -26,4 +27,4 @@ scissors = '''
 '''
 
 user = input("What do you choose? 0 for Rock, 1 for Paper 1 2 for Scissors")
-
+computer = random.randint(0, 2)
